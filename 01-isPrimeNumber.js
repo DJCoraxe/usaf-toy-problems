@@ -18,27 +18,16 @@ isPrimeNumber(67);
 */
 
 var isPrimeNumber = function(num) {
-  if(num <= 1)
-  {
-    return 'please enter a number greater than 1';
+  for(var i = 2; i < num; i++){
+    if(num % i === 0){
+      return false;
+    }
   }
-  else if((num - 1 != -1 % num))
-  {
-    return true;
-  }
-  else if ((num - 1) != (num -1) % num)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
-  
+  return true;
 };
 
 
-console.log(isPrimeNumber(1));
+console.log(isPrimeNumber(6));
 
 // // Uncomment and copy into Chrome dev console to test your function! (One line at a time!)
 // console.log(isPrimeNumber(2)); // true
