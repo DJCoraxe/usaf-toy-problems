@@ -34,6 +34,7 @@ var isPrimeNumber = function(num) {
   {
     return false;
   }
+  
 };
 
 
