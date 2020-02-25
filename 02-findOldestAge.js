@@ -14,10 +14,6 @@ var myArr = [
 
 //--> returns 34
 //*/
-
-
-
-
 var findOldestAge = function(array) {
     var currentMax = 0;
     for(i = 0; i < array.length; i++){
