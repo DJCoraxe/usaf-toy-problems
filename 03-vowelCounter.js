@@ -14,7 +14,19 @@ vowelCounter("Hawaii")
  */
 
  var vowelCounter = function(string) {
-  // YOUR CODE HERE
+  var uppercaseString = string.toUpperCase();
+  var numVowels = 0;
+  var stringArray = uppercaseString.split("");
+
+  stringArray.map(letter => {
+    if(letter === 'A' || letter === 'E' || letter === 'I' || letter === 'O' || letter === 'U'){
+      numVowels++;
+    }
+  })
+  return numVowels;
 };
+
+console.log(vowelCounter('Apple'));
+
 
 // console.log(vowelCounter("Banana"))
